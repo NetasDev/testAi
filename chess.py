@@ -23,7 +23,17 @@ def make_move(start,end):
     board[end[0]][end[1]] = board[start[0]][start[1]]
     board[start[0]][start[1]] = 0
 
-
+def check_for_checkmate(board,playerturn):
+    #playerturn = 1 => white to move
+    #playerturn = -1 => black to move
+    #find king square
+    x,y = 0
+    for i in range(8):
+        for j in range(8):
+            if board[i][j]*playerturn == 1:
+                x=i
+                y=j
+        
 
 board = fill_board(board)
 make_move((0,1),(3,4))
