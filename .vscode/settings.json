@@ -1,3 +1,7 @@
 {
-    "python.pythonPath": "C:\\Users\\tobia\\anaconda3\\envs\\testenv\\python.exe"
+    "python.pythonPath": "C:\\Users\\tobia\\Anaconda3\\envs\\testenv\\python.exe",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.mypyEnabled": false,
+    "python.linting.pycodestyleEnabled": false
 }

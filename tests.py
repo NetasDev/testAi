@@ -2,6 +2,7 @@ import tensorflow as tf
 import time
 import matplotlib.pyplot as plt
 import itertools
+import wandb
 print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('GPU')))
 config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
@@ -9,10 +10,12 @@ session = tf.Session(config=config)
 #sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 
 from tensorflow.keras.datasets import cifar10
-(X_train,y_train),(X_test,y_test) = cifar10.load_data()
+(X_train, y_train),(X_test, y_test) = cifar10.load_data()
 
-from tensorflow.keras.models import Sequential
+import tensorflow.keras.models.Sequential
 from tensorflow.keras.layers import *
+from wandb.keras import WandbCallback
+wandb.init(name = "try3",config={"hyper": "parameter"})
 
 
 
@@ -34,7 +37,7 @@ timeline3 = []
 
 print(X_train.shape)
 y_train_car = y_train == 1
-sum = 0; 
+sum = 0
 for i in range(5):
     tic = time.perf_counter()
     for i in range(100000000):
@@ -43,7 +46,7 @@ for i in range(5):
     toc = float(toc - tic)
     timeline1.append(toc)
     tic = time.perf_counter()
-    model.fit(X_train,y_train_car,batch_size=256,epochs=1,shuffle=True)
+    model.fit(X_train,y_train_car,batch_size=256,epochs=1,shuffle=True,callbacks=[WandbCallback()])
     toc = time.perf_counter()
     toc = float(toc - tic)
     timeline2.append(toc)

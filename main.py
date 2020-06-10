@@ -3,6 +3,7 @@ from othello.OthelloGame import OthelloGame as Game
 #from othello.pytorch.NNet import NNetWrapper as nn
 from othello.keras.NNet import NNetWrapper as nn
 from utils import *
+import wandb
 
 args = dotdict({
     'numIters': 1000,
@@ -24,7 +25,7 @@ args = dotdict({
 if __name__ == "__main__":
     g = Game(6)
     nnet = nn(g)
-
+    wandb.init(project="my-project2")
     if args.load_model:
         nnet.load_checkpoint(args.load_folder_file[0], args.load_folder_file[1])
 

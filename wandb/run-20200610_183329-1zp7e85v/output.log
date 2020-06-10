@@ -1,0 +1,29 @@
+------ITER 1------
+[?25l[KSelf Play |                                | (1/100) Eps Time: 7.443s | Total: 0:00:07 | ETA: 0:00:00[KSelf Play |                                | (2/100) Eps Time: 6.312s | Total: 0:00:12 | ETA: 0:12:17[KSelf Play |                                | (3/100) Eps Time: 6.056s | Total: 0:00:18 | ETA: 0:10:19[KSelf Play |#                               | (4/100) Eps Time: 5.968s | Total: 0:00:23 | ETA: 0:09:48[KSelf Play |#                               | (5/100) Eps Time: 5.953s | Total: 0:00:29 | ETA: 0:09:33[KSelf Play |#                               | (6/100) Eps Time: 5.912s | Total: 0:00:35 | ETA: 0:09:26[KSelf Play |##                              | (7/100) Eps Time: 6.882s | Total: 0:00:48 | ETA: 0:09:16[KSelf Play |##                              | (8/100) Eps Time: 7.850s | Total: 0:01:02 | ETA: 0:10:41[KSelf Play |##                              | (9/100) Eps Time: 9.300s | Total: 0:01:23 | ETA: 0:12:03[KSelf Play |###                             | (10/100) Eps Time: 10.274s | Total: 0:01:42 | ETA: 0:14:07[KSelf Play |###                             | (11/100) Eps Time: 10.810s | Total: 0:01:58 | ETA: 0:15:25[KSelf Play |###                             | (12/100) Eps Time: 11.168s | Total: 0:02:14 | ETA: 0:16:33[KSelf Play |####                            | (13/100) Eps Time: 11.512s | Total: 0:02:29 | ETA: 0:17:49[KSelf Play |####                            | (14/100) Eps Time: 12.032s | Total: 0:02:48 | ETA: 0:19:04[KSelf Play |####                            | (15/100) Eps Time: 12.785s | Total: 0:03:11 | ETA: 0:20:44[KSelf Play |#####                           | (16/100) Eps Time: 13.091s | Total: 0:03:29 | ETA: 0:22:58[KSelf Play |#####                           | (17/100) Eps Time: 13.265s | Total: 0:03:45 | ETA: 0:24:22[KSelf Play |#####                           | (18/100) Eps Time: 13.553s | Total: 0:04:03 | ETA: 0:24:32[KSelf Play |######                          | (19/100) Eps Time: 13.842s | Total: 0:04:23 | ETA: 0:24:46[KSelf Play |######                          | (20/100) Eps Time: 14.027s | Total: 0:04:40 | ETA: 0:24:13[KSelf Play |######                          | (21/100) Eps Time: 14.217s | Total: 0:04:58 | ETA: 0:23:43[KSelf Play |#######                         | (22/100) Eps Time: 14.417s | Total: 0:05:17 | ETA: 0:23:40[KSelf Play |#######                         | (23/100) Eps Time: 14.583s | Total: 0:05:35 | ETA: 0:23:49[KSelf Play |#######                         | (24/100) Eps Time: 14.723s | Total: 0:05:53 | ETA: 0:23:51[KSelf Play |########                        | (25/100) Eps Time: 14.884s | Total: 0:06:12 | ETA: 0:23:26[KSelf Play |########                        | (26/100) Eps Time: 15.008s | Total: 0:06:30 | ETA: 0:22:33Traceback (most recent call last):
+  File "c:/Users/tobia/OneDrive/Desktop/bachelor/.git/testAi/main.py", line 36, in <module>
+    c.learn()
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\Coach.py", line 88, in learn
+    iterationTrainExamples += self.executeEpisode()
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\Coach.py", line 52, in executeEpisode
+    pi = self.mcts.getActionProb(canonicalBoard, temp=temp)
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\MCTS.py", line 32, in getActionProb
+    self.search(canonicalBoard)
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\MCTS.py", line 118, in search
+    v = self.search(next_s)
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\MCTS.py", line 118, in search
+    v = self.search(next_s)
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\MCTS.py", line 79, in search
+    self.Ps[s], v = self.nnet.predict(canonicalBoard)
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\othello\keras\NNet.py", line 53, in predict
+    pi, v = self.nnet.model.predict(board)
+  File "C:\Users\tobia\Anaconda3\envs\testenv\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 908, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\tobia\Anaconda3\envs\testenv\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 723, in predict
+    callbacks=callbacks)
+  File "C:\Users\tobia\Anaconda3\envs\testenv\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 394, in model_iteration
+    batch_outs = f(ins_batch)
+  File "C:\Users\tobia\Anaconda3\envs\testenv\lib\site-packages\tensorflow_core\python\keras\backend.py", line 3476, in __call__
+    run_metadata=self.run_metadata)
+  File "C:\Users\tobia\Anaconda3\envs\testenv\lib\site-packages\tensorflow_core\python\client\session.py", line 1472, in __call__
+    run_metadata_ptr)
+KeyboardInterrupt
