@@ -17,9 +17,16 @@ def fill_board(board):
         board[7][7-i] = -board[0][i]
     return board
 
+def make_move(start,end):
+    #sets the piece on the start position to the end position without checking for legality
+    #should not be a problem since get_moves gives you only legal moves.
+    board[end[0]][end[1]] = board[start[0]][start[1]]
+    board[start[0]][start[1]] = 0
+
 
 
 board = fill_board(board)
+make_move((0,1),(3,4))
 print(board)
 
 
