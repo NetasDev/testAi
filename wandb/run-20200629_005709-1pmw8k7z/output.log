@@ -1,0 +1,29 @@
+------ITER 1------
+[?25l[KSelf Play |                                | (1/100) Eps Time: 7.983s | Total: 0:00:07 | ETA: 0:00:00[KSelf Play |                                | (2/100) Eps Time: 6.568s | Total: 0:00:13 | ETA: 0:13:11[KSelf Play |                                | (3/100) Eps Time: 6.061s | Total: 0:00:18 | ETA: 0:10:44Traceback (most recent call last):
+  File "c:/Users/tobia/OneDrive/Desktop/bachelor/.git/testAi/main.py", line 36, in <module>
+    c.learn()
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\Coach.py", line 88, in learn
+    iterationTrainExamples += self.executeEpisode()
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\Coach.py", line 52, in executeEpisode
+    pi = self.mcts.getActionProb(canonicalBoard, temp=temp)
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\MCTS.py", line 32, in getActionProb
+    self.search(canonicalBoard)
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\MCTS.py", line 118, in search
+    v = self.search(next_s)
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\MCTS.py", line 118, in search
+    v = self.search(next_s)
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\MCTS.py", line 79, in search
+    self.Ps[s], v = self.nnet.predict(canonicalBoard)
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\othello\keras\NNet.py", line 53, in predict
+    pi, v = self.nnet.model.predict(board)
+  File "C:\Users\tobia\Anaconda3\envs\testenv\lib\site-packages\tensorflow_core\python\keras\engine\training.py", line 908, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "C:\Users\tobia\Anaconda3\envs\testenv\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 723, in predict
+    callbacks=callbacks)
+  File "C:\Users\tobia\Anaconda3\envs\testenv\lib\site-packages\tensorflow_core\python\keras\engine\training_arrays.py", line 394, in model_iteration
+    batch_outs = f(ins_batch)
+  File "C:\Users\tobia\Anaconda3\envs\testenv\lib\site-packages\tensorflow_core\python\keras\backend.py", line 3476, in __call__
+    run_metadata=self.run_metadata)
+  File "C:\Users\tobia\Anaconda3\envs\testenv\lib\site-packages\tensorflow_core\python\client\session.py", line 1472, in __call__
+    run_metadata_ptr)
+KeyboardInterrupt

@@ -1,0 +1,25 @@
+{
+    "root": "C:/Users/tobia/OneDrive/Desktop/bachelor/.git/testAi",
+    "program": "c:/Users/tobia/OneDrive/Desktop/bachelor/.git/testAi/main.py",
+    "git": {
+        "remote": "https://github.com/NetasDev/testAi.git",
+        "commit": "78533c6bc37cd7f20f7dbdf8620589fc49563527"
+    },
+    "email": "tokae100@uni-duesseldorf.de",
+    "startedAt": "2020-06-29T00:57:10.854636",
+    "host": "LAPTOP-0QNRQ3BK",
+    "username": "tobia",
+    "executable": "C:\\Users\\tobia\\Anaconda3\\envs\\testenv\\python.exe",
+    "os": "Windows-10-10.0.18362-SP0",
+    "python": "3.6.10",
+    "gpu": "GeForce GTX 1060",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "args": [],
+    "state": "killed",
+    "jobType": null,
+    "mode": "run",
+    "project": "my-project2",
+    "heartbeatAt": "2020-06-29T00:57:36.619454",
+    "exitcode": 255
+}

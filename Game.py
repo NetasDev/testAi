@@ -20,11 +20,8 @@ class Game():
         pass
 
     def getBoardSize(self):
-        """
-        Returns:
-            (x,y): a tuple of board dimensions
-        """
-        pass
+        return (8,8)
+
 
     def getActionSize(self):
         """

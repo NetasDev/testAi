@@ -1,0 +1,11 @@
+------ITER 1------
+[?25l[KSelf Play |###                             | (1/10) Eps Time: 6.977s | Total: 0:00:06 | ETA: 0:00:00[KSelf Play |######                          | (2/10) Eps Time: 6.000s | Total: 0:00:11 | ETA: 0:01:03[KSelf Play |#########                       | (3/10) Eps Time: 5.698s | Total: 0:00:17 | ETA: 0:00:48[KSelf Play |############                    | (4/10) Eps Time: 5.540s | Total: 0:00:22 | ETA: 0:00:40[KSelf Play |################                | (5/10) Eps Time: 5.468s | Total: 0:00:27 | ETA: 0:00:34[KSelf Play |###################             | (6/10) Eps Time: 5.441s | Total: 0:00:32 | ETA: 0:00:28[KSelf Play |######################          | (7/10) Eps Time: 5.403s | Total: 0:00:37 | ETA: 0:00:22[KSelf Play |#########################       | (8/10) Eps Time: 5.409s | Total: 0:00:43 | ETA: 0:00:17[KSelf Play |############################    | (9/10) Eps Time: 5.469s | Total: 0:00:49 | ETA: 0:00:11[KSelf Play |################################| (10/10) Eps Time: 5.449s | Total: 0:00:54 | ETA: 0:00:06
+[?25hCheckpoint Directory exists! 
+Traceback (most recent call last):
+  File "c:/Users/tobia/OneDrive/Desktop/bachelor/.git/testAi/main.py", line 36, in <module>
+    c.learn()
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\Coach.py", line 116, in learn
+    self.pnet.load_checkpoint(folder=self.args.checkpoint, filename='temp.pth.tar')
+  File "c:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\othello\keras\NNet.py", line 71, in load_checkpoint
+    raise("No model in path {}".format(filepath))
+TypeError: exceptions must derive from BaseException

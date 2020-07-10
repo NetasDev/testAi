@@ -1,98 +1,31 @@
-2020-06-10 20:40:32,613 DEBUG   MainThread:14320 [wandb_config.py:_load_defaults():133] no defaults not found in config-defaults.yaml
-2020-06-10 20:40:33,242 DEBUG   MainThread:14320 [meta.py:_setup_code_git():49] probe for git information
-2020-06-10 20:40:33,362 DEBUG   MainThread:14320 [run_manager.py:__init__():547] Initialized sync for testAi/3s8vfbuj
-2020-06-10 20:40:33,367 INFO    MainThread:14320 [run_manager.py:wrap_existing_process():1147] wrapping existing process 10396
-2020-06-10 20:40:33,553 INFO    MainThread:14320 [run_manager.py:init_run():926] system metrics and metadata threads started
-2020-06-10 20:40:33,553 INFO    MainThread:14320 [run_manager.py:init_run():965] upserting run before process can begin, waiting at most 10 seconds
-2020-06-10 20:40:33,922 INFO    Thread-23 :14320 [run_manager.py:_upsert_run():1054] saving pip packages
-2020-06-10 20:40:33,924 INFO    Thread-23 :14320 [run_manager.py:_upsert_run():1056] initializing streaming files api
-2020-06-10 20:40:33,924 INFO    Thread-23 :14320 [run_manager.py:_upsert_run():1063] unblocking file change observer, beginning sync with W&B servers
-2020-06-10 20:40:33,924 INFO    MainThread:14320 [run_manager.py:wrap_existing_process():1164] informing user process we are ready to proceed
-2020-06-10 20:40:33,927 INFO    MainThread:14320 [run_manager.py:_sync_etc():1296] entering loop for messages from user process
-2020-06-10 20:40:34,235 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\config.yaml
-2020-06-10 20:40:34,532 INFO    Thread-10 :14320 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\requirements.txt
-2020-06-10 20:40:34,533 INFO    Thread-10 :14320 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:40:34,533 INFO    Thread-10 :14320 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:40:49,571 INFO    MainThread:14320 [run_manager.py:_sync_etc():1319] received message from user process: {"save_policy": {"glob": "model-best.h5", "policy": "live"}}
-2020-06-10 20:40:50,242 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:40:52,245 INFO    Thread-10 :14320 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\media\graph\graph_summary_ea25fa9f.graph.json
-2020-06-10 20:40:52,246 INFO    Thread-10 :14320 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-summary.json
-2020-06-10 20:40:52,253 INFO    Thread-10 :14320 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\media
-2020-06-10 20:40:52,254 INFO    Thread-10 :14320 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\media\graph
-2020-06-10 20:40:55,250 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:40:58,258 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:41:01,263 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:41:03,266 INFO    Thread-10 :14320 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-events.jsonl
-2020-06-10 20:41:06,271 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:41:06,271 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:41:07,273 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-history.jsonl
-2020-06-10 20:41:07,281 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-summary.json
-2020-06-10 20:41:22,299 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:41:30,310 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\media\graph\graph_summary_ea25fa9f.graph.json
-2020-06-10 20:41:30,310 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-summary.json
-2020-06-10 20:41:34,315 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-events.jsonl
-2020-06-10 20:41:38,321 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:41:39,323 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:41:48,345 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:41:54,353 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:41:58,360 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:42:05,371 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-events.jsonl
-2020-06-10 20:42:09,377 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:42:10,379 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-history.jsonl
-2020-06-10 20:42:10,380 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-summary.json
-2020-06-10 20:42:10,387 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:42:26,409 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:42:34,421 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\media\graph\graph_summary_ea25fa9f.graph.json
-2020-06-10 20:42:34,421 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-summary.json
-2020-06-10 20:42:36,424 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-events.jsonl
-2020-06-10 20:42:37,426 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:42:40,429 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:42:42,432 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:42:46,439 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:42:50,444 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:42:51,445 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-history.jsonl
-2020-06-10 20:42:51,446 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-summary.json
-2020-06-10 20:42:58,455 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:43:08,470 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-events.jsonl
-2020-06-10 20:43:14,479 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\media\graph\graph_summary_ea25fa9f.graph.json
-2020-06-10 20:43:14,479 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-summary.json
-2020-06-10 20:43:14,482 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:43:16,482 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:43:19,487 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:43:23,493 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:43:30,503 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:43:31,504 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:43:32,506 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-history.jsonl
-2020-06-10 20:43:32,507 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-summary.json
-2020-06-10 20:43:39,518 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-events.jsonl
-2020-06-10 20:43:46,527 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:43:57,543 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\media\graph\graph_summary_ea25fa9f.graph.json
-2020-06-10 20:43:57,544 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-summary.json
-2020-06-10 20:44:02,552 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:44:05,556 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:44:10,566 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-events.jsonl
-2020-06-10 20:44:15,573 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:44:18,577 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:44:25,587 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:44:34,602 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:44:34,602 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:44:36,612 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-history.jsonl
-2020-06-10 20:44:36,613 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-summary.json
-2020-06-10 20:44:41,620 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-events.jsonl
-2020-06-10 20:44:50,634 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:44:57,095 INFO    MainThread:14320 [run_manager.py:_sync_etc():1319] received message from user process: {"exitcode": 0}
-2020-06-10 20:44:57,097 INFO    MainThread:14320 [run_manager.py:_sync_etc():1406] closing log streams and sending exitcode to W&B
-2020-06-10 20:44:57,097 INFO    MainThread:14320 [run_manager.py:shutdown():1070] shutting down system stats and metadata service
-2020-06-10 20:44:57,644 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\output.log
-2020-06-10 20:44:57,644 INFO    Thread-10 :14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-events.jsonl
-2020-06-10 20:44:57,734 INFO    MainThread:14320 [run_manager.py:shutdown():1084] stopping streaming files and file change observer
-2020-06-10 20:44:58,646 INFO    MainThread:14320 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:44:59,785 INFO    MainThread:14320 [run_manager.py:_sync_etc():1425] rendering summary
-2020-06-10 20:44:59,805 INFO    MainThread:14320 [run_manager.py:_sync_etc():1457] syncing files to cloud storage
-2020-06-10 20:45:00,065 INFO    MainThread:14320 [run_manager.py:_sync_etc():1466] syncing complete: https://app.wandb.ai/netas/testAi/runs/3s8vfbuj
-3s8vfbuj:run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-events.jsonl
-2020-06-10 20:44:57,734 INFO    MainThread:14320 [3s8vfbuj:run_manager.py:shutdown():1084] stopping streaming files and file change observer
-2020-06-10 20:44:58,646 INFO    MainThread:14320 [3s8vfbuj:run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200610_184029-3s8vfbuj\wandb-metadata.json
-2020-06-10 20:44:59,785 INFO    MainThread:14320 [3s8vfbuj:run_manager.py:_sync_etc():1425] rendering summary
-2020-06-10 20:44:59,805 INFO    MainThread:14320 [3s8vfbuj:run_manager.py:_sync_etc():1457] syncing files to cloud storage
-2020-06-10 20:45:00,065 INFO    MainThread:14320 [3s8vfbuj:run_manager.py:_sync_etc():1466] syncing complete: https://app.wandb.ai/netas/testAi/runs/3s8vfbuj
+2020-06-29 02:58:09,809 DEBUG   MainThread:34544 [wandb_config.py:_load_defaults():133] no defaults not found in config-defaults.yaml
+2020-06-29 02:58:10,335 DEBUG   MainThread:34544 [meta.py:_setup_code_git():49] probe for git information
+2020-06-29 02:58:10,455 DEBUG   MainThread:34544 [run_manager.py:__init__():547] Initialized sync for my-project2/9nm8m8yz
+2020-06-29 02:58:10,460 INFO    MainThread:34544 [run_manager.py:wrap_existing_process():1147] wrapping existing process 31236
+2020-06-29 02:58:10,616 INFO    MainThread:34544 [run_manager.py:init_run():926] system metrics and metadata threads started
+2020-06-29 02:58:10,617 INFO    MainThread:34544 [run_manager.py:init_run():965] upserting run before process can begin, waiting at most 10 seconds
+2020-06-29 02:58:10,916 INFO    Thread-21 :34544 [run_manager.py:_upsert_run():1054] saving pip packages
+2020-06-29 02:58:10,918 INFO    Thread-21 :34544 [run_manager.py:_upsert_run():1056] initializing streaming files api
+2020-06-29 02:58:10,918 INFO    Thread-21 :34544 [run_manager.py:_upsert_run():1063] unblocking file change observer, beginning sync with W&B servers
+2020-06-29 02:58:10,918 INFO    MainThread:34544 [run_manager.py:wrap_existing_process():1164] informing user process we are ready to proceed
+2020-06-29 02:58:10,921 INFO    MainThread:34544 [run_manager.py:_sync_etc():1296] entering loop for messages from user process
+2020-06-29 02:58:11,311 INFO    Thread-8  :34544 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\config.yaml
+2020-06-29 02:58:11,550 INFO    Thread-8  :34544 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\output.log
+2020-06-29 02:58:11,551 INFO    Thread-8  :34544 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\requirements.txt
+2020-06-29 02:58:11,551 INFO    Thread-8  :34544 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\wandb-metadata.json
+2020-06-29 02:58:27,319 INFO    Thread-8  :34544 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\wandb-metadata.json
+2020-06-29 02:58:40,326 INFO    Thread-8  :34544 [run_manager.py:_on_file_created():681] file/dir created: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\wandb-events.jsonl
+2020-06-29 02:58:43,327 INFO    Thread-8  :34544 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\wandb-metadata.json
+2020-06-29 02:58:59,334 INFO    Thread-8  :34544 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\wandb-metadata.json
+2020-06-29 02:59:06,660 INFO    MainThread:34544 [run_manager.py:_sync_etc():1319] received message from user process: {"exitcode": 1}
+2020-06-29 02:59:06,661 INFO    MainThread:34544 [run_manager.py:_sync_etc():1406] closing log streams and sending exitcode to W&B
+2020-06-29 02:59:06,662 INFO    MainThread:34544 [run_manager.py:shutdown():1070] shutting down system stats and metadata service
+2020-06-29 02:59:07,340 INFO    Thread-8  :34544 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\output.log
+2020-06-29 02:59:07,340 INFO    Thread-8  :34544 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\wandb-events.jsonl
+2020-06-29 02:59:07,664 INFO    MainThread:34544 [run_manager.py:shutdown():1084] stopping streaming files and file change observer
+2020-06-29 02:59:08,341 INFO    Thread-8  :34544 [run_manager.py:_on_file_modified():692] file/dir modified: C:\Users\tobia\OneDrive\Desktop\bachelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\wandb-metadata.json
+2020-06-29 02:59:10,671 INFO    MainThread:34544 [run_manager.py:_sync_etc():1457] syncing files to cloud storage
+2020-06-29 02:59:10,695 INFO    MainThread:34544 [run_manager.py:_sync_etc():1466] syncing complete: https://app.wandb.ai/netas/my-project2/runs/9nm8m8yz
+chelor\.git\testAi\wandb\run-20200629_005807-9nm8m8yz\wandb-metadata.json
+2020-06-29 02:59:10,671 INFO    MainThread:34544 [9nm8m8yz:run_manager.py:_sync_etc():1457] syncing files to cloud storage
+2020-06-29 02:59:10,695 INFO    MainThread:34544 [9nm8m8yz:run_manager.py:_sync_etc():1466] syncing complete: https://app.wandb.ai/netas/my-project2/runs/9nm8m8yz
