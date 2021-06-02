@@ -53,7 +53,7 @@ tensorflow-estimator==1.15.1
 tensorflow==1.15.0
 termcolor==1.1.0
 typed-ast==1.4.1
-urllib3==1.25.9
+urllib3==1.26.5
 wandb==0.9.1
 watchdog==0.10.2
 werkzeug==0.16.1
