@@ -57,6 +57,6 @@ urllib3==1.25.9
 wandb==0.9.1
 watchdog==0.10.2
 werkzeug==0.16.1
-wheel==0.34.2
+wheel==0.38.1
 wincertstore==0.2
 wrapt==1.11.2
